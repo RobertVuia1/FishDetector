@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "690471538937",
+    "project_id": "fish-detector-project",
+    "storage_bucket": "fish-detector-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690471538937:android:dd22b04f607dc62f161228",
+        "android_client_info": {
+          "package_name": "com.example.firsttry"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7F8Hcknk2xkSM5WQslObgPaASraT4_Pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
