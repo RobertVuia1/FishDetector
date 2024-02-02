@@ -11,4 +11,20 @@
     <string name="register_here">Register Here</string>
     <string name="login_here">Login Here</string>
     <string name="logout">Logout</string>
+    <string name="main_page">Main Page</string>
+    <string name="fish_detector">Fish Detector</string>
+    <string name="home">Home</string>
+    <string name="reports">Reports</string>
+    <string name="tournaments">Tournaments</string>
+    <string name="favorite_spots">Favorite Spots</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="weather_info">Weather Info</string>
+    <string name="fish_information">Fish Information</string>
+    <string name="others">Others</string>
+    <string name="menu">MENU</string>
+    <string name="verified">Verified</string>
+    <string name="please_select_the_option">Please select the option</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather">Weather</string>
 </resources>

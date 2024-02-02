@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/home"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/menuReports"
+        android:icon="@drawable/reports"
+        android:title="@string/reports"/>
+
+    <item
+        android:id="@+id/menuTournaments"
+        android:icon="@drawable/tournaments"
+        android:title="@string/tournaments"/>
+
+    <item
+        android:id="@+id/menuFavorite"
+        android:icon="@drawable/favorite"
+        android:title="@string/favorite_spots"/>
+
+    <item
+        android:id="@+id/menuUpload"
+        android:icon="@drawable/upload"
+        android:title="@string/upload_photo"/>
+
+    <item
+        android:id="@+id/menuWeather"
+        android:icon="@drawable/weather"
+        android:title="@string/weather_info"/>
+
+    <item
+        android:id="@+id/menuFish"
+        android:icon="@drawable/fishinfo"
+        android:title="@string/fish_information"/>
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/menuLogout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout"/>
+        </menu>
+
+    </item>
+
+
+</menu>
