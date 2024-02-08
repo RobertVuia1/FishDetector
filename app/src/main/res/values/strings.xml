@@ -27,4 +27,28 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weather">Weather</string>
+    <string name="this_is_main_activity">This is main activity!</string>
+    <string name="amur">Amur</string>
+    <string name="caras">Caras</string>
+    <string name="crap">Crap</string>
+    <string name="biban">Biban</string>
+    <string name="salau">Salau</string>
+    <string name="stiuca">Stiuca</string>
+    <string name="somn">Somn</string>
+    <string name="selectati_specia_de_peste_despre_care_doriti_informatii">Selectati specia de peste despre care doriti informatii</string>
+    <string name="amur_page">Amur Page</string>
+    <string name="go_back">Go Back</string>
+    <string name="cyprinus_carpio">Cyprinus carpio</string>
+    <string name="temperature_range_3_c_35_c">Temperature range: 3°C - 35°C</string>
+    <string name="specie_crap">Specie: crap</string>
+    <string name="denumire_stiintifica_cyprinus_carpio">Denumire stiintifica: cyprinus_carpio</string>
+    <string name="specie_amur">Specie: Amur</string>
+    <string name="denumire_stiintifica_ctenopharyngodon_idella">Denumire stiintifica: Ctenopharyngodon Idella</string>
+    <string name="temperatura_0_38_grade_celsius">Temperatura: 0-38 grade Celsius</string>
+    <string name="adancime_0_30_metri">Adancime: 0-30 metri</string>
+    <string name="dimensiune_maxima_inregistrata_150cm">Dimensiune maxima inregistrata: 150cm</string>
+    <string name="greutate_maxima_inregistrata_45kg">Greutate Maxima Inregistrata: 45kg</string>
+    <string name="descriere_adul_ii_se_g_sesc_n_lacuri_iazuri_bazine_i_r_uri_mari_prefer_nd_corpuri_de_ap_mari_cu_curgere_lent_sau_st_t_toare_cu_vegeta_ie_toleran_la_o_gam_larg_de_temperaturi_de_la_0_la_38_c_i_salinit_i_p_n_la_10_ppt_i_niveluri_de_oxigen_p_n_la_0_5_ppm_se_hr_ne_te_cu_plante_acvatice_superioare_i_cu_ierburi_scufundate_detritus_insecte_i_alte_nevertebrate_una_dintre_cele_mai_importante_specii_de_acvacultur_din_lume_i_folosit_i_pentru_combaterea_buruienilor_n_r_uri_iazuri_cu_pe_ti_i_rezervoare_depune_icre_pe_albiile_r_urilor_cu_curent_foarte_puternic_considerat_un_d_un_tor_n_majoritatea_rilor_din_cauza_daunelor_aduse_vegeta_iei_scufundate">Descriere: Adulții se găsesc în lacuri, iazuri, bazine și râuri mari, preferând corpuri de apă mari, cu curgere lent sau stătătoare, cu vegetație. Toleranță la o gamă largă de temperaturi de la 0° la 38°C și salinități până la 10 ppt și niveluri de oxigen până la 0,5 ppm. Se hrănește cu plante acvatice superioare și cu ierburi scufundate, detritus, insecte și alte nevertebrate. Una dintre cele mai importante specii de acvacultură din lume și folosită și pentru combaterea buruienilor în râuri, iazuri cu pești și rezervoare. Depune icre pe albiile râurilor cu curent foarte puternic. Considerat un dăunător în majoritatea țărilor din cauza daunelor aduse vegetației scufundate.</string>
+    <string name="sursa_https_www_fishbase_de_summary_speciessummary_php_id_79_at_grass_carp"><![CDATA[Sursa: https://www.fishbase.de/summary/SpeciesSummary.php?ID=79&AT=grass+carp]]></string>
+    <string name="adul_ii_se_g_sesc_n_lacuri_iazuri_bazine_i_r_uri_mari_prefer_nd_corpuri_de_ap_mari_cu_curgere_lent_sau_st_t_toare_cu_vegeta_ie_toleran_la_o_gam_larg_de_temperaturi_de_la_0_la_38_c_i_salinit_i_p_n_la_10_ppt_i_niveluri_de_oxigen_p_n_la_0_5_ppm_se_hr_ne_te_cu_plante_acvatice_superioare_i_cu_ierburi_scufundate_detritus_insecte_i_alte_nevertebrate_una_dintre_cele_mai_importante_specii_de_acvacultur_din_lume_i_folosit_i_pentru_combaterea_buruienilor_n_r_uri_iazuri_cu_pe_ti_i_rezervoare_depune_icre_pe_albiile_r_urilor_cu_curent_foarte_puternic">Adulții se găsesc în lacuri, iazuri, bazine și râuri mari, preferând corpuri de apă mari, cu curgere lent sau stătătoare, cu vegetație. Toleranță la o gamă largă de temperaturi de la 0° la 38°C și salinități până la 10 ppt și niveluri de oxigen până la 0,5 ppm. Se hrănește cu plante acvatice superioare și cu ierburi scufundate, detritus, insecte și alte nevertebrate. Una dintre cele mai importante specii de acvacultură din lume și folosită și pentru combaterea buruienilor în râuri, iazuri cu pești și rezervoare. Depune icre pe albiile râurilor cu curent foarte puternic.</string>
 </resources>

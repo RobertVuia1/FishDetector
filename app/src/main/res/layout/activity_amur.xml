@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Amur">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/fishImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/amur"
+        />
+
+    <!-- Other TextViews to display fish species details -->
+    <TextView
+        android:id="@+id/speciesNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/specie_amur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fishImageView"
+        app:layout_constraintTop_toTopOf="@id/fishImageView"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/scientificNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/denumire_stiintifica_ctenopharyngodon_idella"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fishImageView"
+        app:layout_constraintTop_toBottomOf="@id/speciesNameTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/temperatureRangeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatura_0_38_grade_celsius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fishImageView"
+        app:layout_constraintTop_toBottomOf="@id/scientificNameTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/adancimeRangeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/adancime_0_30_metri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fishImageView"
+        app:layout_constraintTop_toBottomOf="@id/temperatureRangeTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/dimensiuneMaxima"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/dimensiune_maxima_inregistrata_150cm"
+        app:layout_constraintEnd_toEndOf="@id/fishImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/adancimeRangeTextView" />
+
+    <TextView
+        android:id="@+id/greutateMaxima"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/greutate_maxima_inregistrata_45kg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/dimensiuneMaxima" />
+
+    <TextView
+        android:id="@+id/descriere"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/adul_ii_se_g_sesc_n_lacuri_iazuri_bazine_i_r_uri_mari_prefer_nd_corpuri_de_ap_mari_cu_curgere_lent_sau_st_t_toare_cu_vegeta_ie_toleran_la_o_gam_larg_de_temperaturi_de_la_0_la_38_c_i_salinit_i_p_n_la_10_ppt_i_niveluri_de_oxigen_p_n_la_0_5_ppm_se_hr_ne_te_cu_plante_acvatice_superioare_i_cu_ierburi_scufundate_detritus_insecte_i_alte_nevertebrate_una_dintre_cele_mai_importante_specii_de_acvacultur_din_lume_i_folosit_i_pentru_combaterea_buruienilor_n_r_uri_iazuri_cu_pe_ti_i_rezervoare_depune_icre_pe_albiile_r_urilor_cu_curent_foarte_puternic"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/greutateMaxima" />
+
+    <TextView
+        android:id="@+id/sursa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/sursa_https_www_fishbase_de_summary_speciessummary_php_id_79_at_grass_carp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/descriere" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

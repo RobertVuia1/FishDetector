@@ -11,9 +11,11 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
+import android.content.ClipData;
 import android.content.Intent;
 import android.media.RouteListingPreference;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,19 +46,23 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.navigationView);
         navigationView.setItemIconTintList(null);
 
-        NavController navController = Navigation.findNavController(this, R.id.navHostFragment);
-        NavigationUI.setupWithNavController(navigationView, navController);
-
-        final TextView textTitle = findViewById(R.id.textTitle);
-
-        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+        // Handle navigation item clicks
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                textTitle.setText(destination.getLabel());
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                if (item.getItemId() == R.id.menuFish){
+                    startActivity(new Intent(MainActivity.this, FishInformation.class));
+                } else if (item.getItemId() == R.id.menuReports){
+                    startActivity(new Intent(MainActivity.this, FishInformation.class));
+                }
+
+                // Close the navigation drawer
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
             }
         });
 
-
-
     }
 }
+
