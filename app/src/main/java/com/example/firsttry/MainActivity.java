@@ -53,8 +53,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if (item.getItemId() == R.id.menuFish){
                     startActivity(new Intent(MainActivity.this, FishInformation.class));
-                } else if (item.getItemId() == R.id.menuReports){
-                    startActivity(new Intent(MainActivity.this, FishInformation.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuLogout){
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(MainActivity.this, Login.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuProfile){
+                    startActivity(new Intent(MainActivity.this, MainActivity.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuWeather){
+                    startActivity(new Intent(MainActivity.this, WeatherInput.class));
+                    finish();
                 }
 
                 // Close the navigation drawer

@@ -21,6 +21,7 @@ public class Amur extends AppCompatActivity {
             public void onClick(View v) {
                 // Start a new activity or show a dialog for Card 1
                 startActivity(new Intent(Amur.this, FishInformation.class));
+                finish();
             }
         });
     }

@@ -10,7 +10,7 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_back"
+        android:text="@string/inapoi"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="16dp"
@@ -29,7 +29,6 @@
         android:src="@drawable/amur"
         />
 
-    <!-- Other TextViews to display fish species details -->
     <TextView
         android:id="@+id/speciesNameTextView"
         android:layout_width="0dp"
