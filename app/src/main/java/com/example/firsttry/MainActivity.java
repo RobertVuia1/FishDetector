@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, MainActivity.class));
                     finish();
                 } else if (item.getItemId() == R.id.menuWeather){
-                    startActivity(new Intent(MainActivity.this, WeatherInput.class));
+                    startActivity(new Intent(MainActivity.this, Weather.class));
                     finish();
                 }
 

@@ -63,4 +63,9 @@
     <string name="duminica_11_februarie">Duminica 11 februarie</string>
     <string name="_15_c_insorit">15°C Insorit</string>
     <string name="temp_max_temp_min_umiditate_vant">Temp. max. Temp. min. Umiditate Vant</string>
+    <string name="city_name">City Name</string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="_23">23</string>
+    <string name="time">time</string>
+    <string name="_13">13</string>
 </resources>
