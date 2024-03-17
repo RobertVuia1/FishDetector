@@ -122,25 +122,38 @@
             android:src="@mipmap/ic_launcher"/>
 
         <TextView
+            android:id="@+id/idTVCondition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/idTVCondition"
-            android:layout_margin="10dp"
+            android:layout_below="@+id/idIVIcon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:textAlignment="center"
             android:text="Condition"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/moreDaysButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vezi_prognoza_pe_7_zile"
             android:textColor="@color/white"
             android:layout_below="@+id/idIVIcon"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginBottom="10dp"
+            android:layout_above="@id/idRvWeather"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:text="Today's Weather Forecast"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_above="@id/idRvWeather"/>
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

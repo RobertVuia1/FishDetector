@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.menuWeather){
                     startActivity(new Intent(MainActivity.this, Weather.class));
                     finish();
+                } else if (item.getItemId() == R.id.menuUpload){
+                    startActivity(new Intent(MainActivity.this, UploadPhoto.class));
+                    finish();
                 }
 
                 // Close the navigation drawer

@@ -100,7 +100,7 @@ public class Weather extends AppCompatActivity {
         Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
 
-        getWeatherInfo(getCityName(location.getLongitude(), location.getLatitude()));
+        getWeatherInfo(getCityName(10,20));
 
         searchIV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +125,17 @@ public class Weather extends AppCompatActivity {
             }
         });
 
+        Button more = findViewById(R.id.moreDaysButton);
+        more.setOnClickListener(v -> {
+            // Start a new activity or show a dialog for Card 1
+            String data = cityEdt.getText().toString();
+
+            Intent i = new Intent(Weather.this, Weather7Days.class);
+            i.putExtra("City", data);
+            startActivity(i);
+            finish();
+        });
+
 
 
     }
@@ -145,6 +156,15 @@ public class Weather extends AppCompatActivity {
 
     private String getCityName(double longitude, double latitude){
         String cityName = "Not found";
+
+        String longi = String.valueOf(longitude);
+        String lat = String.valueOf(latitude);
+
+        Toast.makeText(Weather.this, longi + " " + lat, Toast.LENGTH_SHORT).show();
+
+        Log.i("date", longi);
+        Log.i("date", lat);
+
         Geocoder gcd = new Geocoder(getBaseContext(), Locale.getDefault());
         try {
             List<Address> addresses = gcd.getFromLocation(latitude, longitude, 10);
@@ -155,7 +175,7 @@ public class Weather extends AppCompatActivity {
                     if (city != null && !city.equals("")){
                         cityName = city;
                     }else {
-                        cityName = "Timisoara";
+                        cityName = "Bocsa";
                     }
                 }
             }
@@ -167,19 +187,19 @@ public class Weather extends AppCompatActivity {
     }
 
     public static String extractFileName(String url) {
-        // Find the last occurrence of '/' in the URL
+
         int lastSlashIndex = url.lastIndexOf('/');
 
-        // Extract the substring after the last '/'
+
         String fileNameWithExtension = url.substring(lastSlashIndex + 1);
 
-        // Find the position of the file extension separator '.'
+
         int dotIndex = fileNameWithExtension.lastIndexOf('.');
 
-        // Extract the substring before the file extension
+
         String fileName = fileNameWithExtension.substring(0, dotIndex);
 
-        // Determine whether it's "day" or "night" based on the URL
+
         String timeOfDay = url.contains("/day/") ? "day_" : "night_";
 
         // Concatenate the time of day with the filename
@@ -205,8 +225,6 @@ public class Weather extends AppCompatActivity {
                     String condition = response.getJSONObject("current").getJSONObject("condition").getString("text");
                     String conditionIcon = response.getJSONObject("current").getJSONObject("condition").getString("icon");
                     String fileName = extractFileName(conditionIcon);
-
-                    Toast.makeText(Weather.this, "day_" + fileName, Toast.LENGTH_SHORT).show();
 
 
                     String imagePath = fileName;
