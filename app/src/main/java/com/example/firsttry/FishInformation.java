@@ -62,13 +62,47 @@ public class FishInformation extends AppCompatActivity {
 
         GridLayout gridLayout = findViewById(R.id.gridLayout);
 
-        // Set OnClickListener for each CardView
+
         CardView cardAmur = findViewById(R.id.cardAmur);
+        CardView cardCaras = findViewById(R.id.cardCaras);
+        CardView cardCrap = findViewById(R.id.cardCrap);
+        CardView cardBiban = findViewById(R.id.cardBiban);
+        CardView cardSomn = findViewById(R.id.cardSomn);
+        CardView cardStiuca = findViewById(R.id.cardStiuca);
         cardAmur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start a new activity or show a dialog for Card 1
                 startActivity(new Intent(FishInformation.this, Amur.class));
+            }
+        });
+        cardBiban.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FishInformation.this, Biban.class));
+            }
+        });
+        cardCaras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FishInformation.this, Caras.class));
+            }
+        });
+        cardCrap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FishInformation.this, Crap.class));
+            }
+        });
+        cardStiuca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FishInformation.this, Stiuca.class));
+            }
+        });
+        cardSomn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FishInformation.this, Somn.class));
             }
         });
     }

@@ -40,16 +40,15 @@
     <string name="go_back">Go Back</string>
     <string name="cyprinus_carpio">Cyprinus carpio</string>
     <string name="temperature_range_3_c_35_c">Temperature range: 3°C - 35°C</string>
-    <string name="specie_crap">Specie: crap</string>
     <string name="denumire_stiintifica_cyprinus_carpio">Denumire stiintifica: cyprinus_carpio</string>
-    <string name="specie_amur">Specie: Amur</string>
-    <string name="denumire_stiintifica_ctenopharyngodon_idella">Denumire stiintifica: Ctenopharyngodon Idella</string>
-    <string name="temperatura_0_38_grade_celsius">Temperatura: 0-38 grade Celsius</string>
-    <string name="adancime_0_30_metri">Adancime: 0-30 metri</string>
-    <string name="dimensiune_maxima_inregistrata_150cm">Dimensiune maxima inregistrata: 150cm</string>
-    <string name="greutate_maxima_inregistrata_45kg">Greutate Maxima Inregistrata: 45kg</string>
+    <string name="specie_amur"><b>Specie:</b> Amur</string>
+    <string name="denumire_stiintifica_ctenopharyngodon_idella"><b>Denumire stiintifica:</b> Ctenopharyngodon Idella</string>
+    <string name="temperatura_0_38_grade_celsius"><b>Temperatura:</b> 0-38 grade Celsius</string>
+    <string name="adancime_0_30_metri"><b>Adancime:</b> 0-30 metri</string>
+    <string name="dimensiune_maxima_inregistrata_150cm"><b>Dimensiune maxima inregistrata:</b> 150cm</string>
+    <string name="greutate_maxima_inregistrata_45kg"><b>Greutate Maxima Inregistrata:</b> 45kg</string>
     <string name="descriere_adul_ii_se_g_sesc_n_lacuri_iazuri_bazine_i_r_uri_mari_prefer_nd_corpuri_de_ap_mari_cu_curgere_lent_sau_st_t_toare_cu_vegeta_ie_toleran_la_o_gam_larg_de_temperaturi_de_la_0_la_38_c_i_salinit_i_p_n_la_10_ppt_i_niveluri_de_oxigen_p_n_la_0_5_ppm_se_hr_ne_te_cu_plante_acvatice_superioare_i_cu_ierburi_scufundate_detritus_insecte_i_alte_nevertebrate_una_dintre_cele_mai_importante_specii_de_acvacultur_din_lume_i_folosit_i_pentru_combaterea_buruienilor_n_r_uri_iazuri_cu_pe_ti_i_rezervoare_depune_icre_pe_albiile_r_urilor_cu_curent_foarte_puternic_considerat_un_d_un_tor_n_majoritatea_rilor_din_cauza_daunelor_aduse_vegeta_iei_scufundate">Descriere: Adulții se găsesc în lacuri, iazuri, bazine și râuri mari, preferând corpuri de apă mari, cu curgere lent sau stătătoare, cu vegetație. Toleranță la o gamă largă de temperaturi de la 0° la 38°C și salinități până la 10 ppt și niveluri de oxigen până la 0,5 ppm. Se hrănește cu plante acvatice superioare și cu ierburi scufundate, detritus, insecte și alte nevertebrate. Una dintre cele mai importante specii de acvacultură din lume și folosită și pentru combaterea buruienilor în râuri, iazuri cu pești și rezervoare. Depune icre pe albiile râurilor cu curent foarte puternic. Considerat un dăunător în majoritatea țărilor din cauza daunelor aduse vegetației scufundate.</string>
-    <string name="sursa_https_www_fishbase_de_summary_speciessummary_php_id_79_at_grass_carp"><![CDATA[Sursa: https://www.fishbase.de/summary/SpeciesSummary.php?ID=79&AT=grass+carp]]></string>
+    <string name="sursa_https_www_fishbase_de_summary_speciessummary_php_id_79_at_grass_carp"><b>Sursa:</b> https://www.fishbase.de/summary/SpeciesSummary.php?ID=79&amp;AT=grass+carp</string>
     <string name="adul_ii_se_g_sesc_n_lacuri_iazuri_bazine_i_r_uri_mari_prefer_nd_corpuri_de_ap_mari_cu_curgere_lent_sau_st_t_toare_cu_vegeta_ie_toleran_la_o_gam_larg_de_temperaturi_de_la_0_la_38_c_i_salinit_i_p_n_la_10_ppt_i_niveluri_de_oxigen_p_n_la_0_5_ppm_se_hr_ne_te_cu_plante_acvatice_superioare_i_cu_ierburi_scufundate_detritus_insecte_i_alte_nevertebrate_una_dintre_cele_mai_importante_specii_de_acvacultur_din_lume_i_folosit_i_pentru_combaterea_buruienilor_n_r_uri_iazuri_cu_pe_ti_i_rezervoare_depune_icre_pe_albiile_r_urilor_cu_curent_foarte_puternic">Adulții se găsesc în lacuri, iazuri, bazine și râuri mari, preferând corpuri de apă mari, cu curgere lent sau stătătoare, cu vegetație. Toleranță la o gamă largă de temperaturi de la 0° la 38°C și salinități până la 10 ppt și niveluri de oxigen până la 0,5 ppm. Se hrănește cu plante acvatice superioare și cu ierburi scufundate, detritus, insecte și alte nevertebrate. Una dintre cele mai importante specii de acvacultură din lume și folosită și pentru combaterea buruienilor în râuri, iazuri cu pești și rezervoare. Depune icre pe albiile râurilor cu curent foarte puternic.</string>
     <string name="introduceti_cea_mai_apropiata_localitate_de_locul_dorit">Introduceti cea mai apropiata localitate de locul dorit:</string>
     <string name="localitate">Localitate</string>
@@ -69,4 +68,59 @@
     <string name="time">time</string>
     <string name="_13">13</string>
     <string name="vezi_prognoza_pe_7_zile">Vezi prognoza pe 7 zile</string>
+    <string name="favorite_place_1">Favorite place 1</string>
+    <string name="first_place_description">First place description</string>
+    <string name="adaugati_o_postare_noua">Adaugati o postare noua!</string>
+    <string name="adaugati_descrierea_aici">Adaugati descrierea aici</string>
+    <string name="textul_postarii">Textul postarii</string>
+    <string name="adauga_postarea">Adauga postarea!</string>
+    <string name="apasati_pe_imagine_pentru_a_incarca_o_fotografie">Apasati pe imagine pentru a incarca o fotografie</string>
+    <string name="ad_uga_i_un_nou_loc_favorit">Adăugați un nou loc favorit</string>
+    <string name="numele_locului">Numele Locului</string>
+    <string name="loca_ia">Locația</string>
+    <string name="descriere">Descriere</string>
+    <string name="salva_i">Salvați</string>
+    <string name="locatia">Locatia</string>
+    <string name="locatie">Locatie</string>
+    <string name="informatii_amur"><b>Descriere: </b>Adulții se găsesc în lacuri, iazuri, bazine și râuri mari, preferând corpuri de apă mari, cu curgere lent sau stătătoare, cu vegetație. Toleranță la o gamă largă de temperaturi de la 0° la 38°C și salinități până la 10 ppt și niveluri de oxigen până la 0,5 ppm. Se hrănește cu plante acvatice superioare și cu ierburi scufundate, detritus, insecte și alte nevertebrate. Una dintre cele mai importante specii de acvacultură din lume și folosită și pentru combaterea buruienilor în râuri, iazuri cu pești și rezervoare. Depune icre pe albiile râurilor cu curent foarte puternic.</string>
+    <string name="specie_caras"><b>Specie:</b> Caras</string>
+    <string name="denumire_caras"><b>Denumire stiintifica:</b> Carrassius gibelio</string>
+    <string name="temperatura_caras"><b>Temperatura:</b> 10-20 grade Celsius</string>
+    <string name="adancime_caras"><b>Adancime:</b> 0-? metri</string>
+    <string name="dimensiune_caras"><b>Dimensiune maxima inregistrata:</b> 46.6cm</string>
+    <string name="greutate_caras"><b>Greutate Maxima Inregistrata:</b> 3kg</string>
+    <string name="descriere_caras"><b>Descriere: </b>Locuiește într-o mare varietate de corpuri de apă liniștită și râuri de câmpie, de obicei asociate cu vegetație scufundată sau inundații regulate. Poate tolera puternic concentrații scăzute de oxigen și poluare. Indivizii care locuiesc la lac se deplasează în gurile râului pentru a evita apa cu oxigen scăzut în timpul iernii. Larvele de hrănire și juvenilii apar în habitate cu complexitate ridicată sub formă de curele de stuf. Se hrănește cu plancton, nevertebrate bentonice, material vegetal și detritus. Depune icre pe țărmuri puțin adânci și calde pe vegetația scufundată. Capabil să se reproducă din ouă nefertilizate (ginogeneză). Durata de viață ajunge până la aproximativ 10 ani. Europa de Est sau formă sălbatică a peștelui auriu.</string>
+    <string name="sursa_caras"><b>Sursa: </b>https://www.fishbase.de/summary/SpeciesSummary.php?ID=6376&amp;AT=Prussian+carp</string>
+    <string name="specie_crap"><b>Specie:</b> Crap</string>
+    <string name="denumire_crap"><b>Denumire stiintifica:</b> Cyprinus carpio</string>
+    <string name="temperatura_crap"><b>Temperatura:</b> 3-35 grade Celsius</string>
+    <string name="adancime_crap"><b>Adancime:</b> 0-29 metri</string>
+    <string name="dimensiune_crap"><b>Dimensiune maxima inregistrata:</b> 120cm</string>
+    <string name="greutate_crap"><b>Greutate Maxima Inregistrata:</b> 40.1kg</string>
+    <string name="descriere_crap"><b>Descriere: </b>Locuiește în ape calde, adânci, cu curgere lentă și calme, cum ar fi râurile de câmpie și lacurile mari, bine vegetate. Rezistent și tolerant la o mare varietate de condiții, dar în general favorizează corpurile mari de apă cu apă care curge lentă sau stătătoare și sedimente de fund moale. Cel mai activ în amurg și în zori. Atât adulții, cât și tinerii se hrănesc cu o varietate de organisme bentonice și material vegetal. Se înmulțește de-a lungul țărmurilor sau în zone izolate. Adulții întreprind adesea o migrație considerabilă de depunere a icrelor către tărâmuri adecvate și pajiști inundate. Păstrarea acvariului: în grupuri de 5 sau mai multe persoane; dimensiunea minimă a acvariului >200 cm; nu este recomandat pentru acvariile de acasă</string>
+    <string name="sursa_crap"><b>Sursa: </b>https://www.fishbase.de/summary/SpeciesSummary.php?ID=1450&amp;AT=common+carp</string>
+    <string name="specie_somn"><b>Specie:</b> Somn</string>
+    <string name="denumire_somn"><b>Denumire stiintifica:</b> Silurus glanis</string>
+    <string name="temperatura_somn"><b>Temperatura:</b> 4-20 grade Celsius</string>
+    <string name="adancime_somn"><b>Adancime:</b> 0-30 metri</string>
+    <string name="dimensiune_somn"><b>Dimensiune maxima inregistrata:</b> 273cm</string>
+    <string name="greutate_somn"><b>Greutate Maxima Inregistrata:</b> 130kg</string>
+    <string name="descriere_somn"><b>Descriere: </b>Lungimea maximă a speciei a fost înregistrată pentru o lungă perioadă de timp de 5 m, iar greutatea maximă de 306 kg. S-a demonstrat că identificările au fost greșite și problemele unităților de măsură au dus la aceste numere. Maximele înregistrate cu evidență sunt 2,73 m și 130 kg. Locuiește în râuri de câmpie mari și mijlocii, în râuri izolatoare și în lacuri bine vegetate. Apare în principal în lacuri și râuri mari, deși ocazional intră în apă sălmată în Marea Baltică și Marea Neagră. Găsit în apele adânci ale barajelor construite pe cursul inferior al râurilor. Un prădător nocturn, care caută hrană lângă fund și în coloana de apă. Larvele și puieții sunt bentonice, hrănindu-se cu o mare varietate de nevertebrate și pești. Adulții ataca pești și alte vertebrate acvatice. Atinge prima maturitate sexuală la 2-3 ani. Depune icre în apa sărată a Mării Aral (la Kulandy). Comercializat în stare proaspătă, conservată și congelată; poate fi prăjit și copt. Amenințată local din cauza reglementării râurilor care distrug zonele de icre de mică adâncime</string>
+    <string name="sursa_somn"><b>Sursa: </b>https://www.fishbase.de/summary/SpeciesSummary.php?ID=289&amp;AT=Weels%20catfish</string>
+    <string name="specie_stiuca"><b>Specie:</b> Stiuca</string>
+    <string name="denumire_stiuca"><b>Denumire stiintifica:</b> Esox lucius</string>
+    <string name="temperatura_stiuca"><b>Temperatura:</b> 10-28 grade Celsius</string>
+    <string name="adancime_stiuca"><b>Adancime:</b> 0-30 metri</string>
+    <string name="dimensiune_stiuca"><b>Dimensiune maxima inregistrata:</b> 150cm</string>
+    <string name="greutate_stiuca"><b>Greutate Maxima Inregistrata:</b> 28.4kg</string>
+    <string name="descriere_stiuca"><b>Descriere: </b>Apare în lacuri cu vegetație limpede, bazine liniștite și râuri mici și mari. De obicei solitar și extrem de teritorial. Intră în apă salmară în Marea Baltică. Adulții se hrănesc în principal cu pești, dar uneori se hrănesc foarte mult cu broaște și raci. Canibalismul este comun. În lacurile arctice, este uneori singura specie prezentă într-un anumit corp de apă. În astfel de cazuri, puieții se hrănesc cu nevertebrate și vertebrate terestre; indivizii mari sunt în principal canibali. Canibalistic ca juvenili. Fecalele de stiuca sunt evitate de alti pesti deoarece contin feromoni de alarma. Depune fecale în anumite locații, departe de zona sa de hrănire. În general, nu întreprinde migrații lungi, dar câteva se pot deplasa pe distanțe considerabile. Acest pește poate fi puternic infestat cu paraziți, inclusiv cu viermele lat care, dacă nu este ucis prin gătit temeinic, poate infecta omul; este folosit ca gazdă intermediară de către un parazit cestod, ceea ce are ca rezultat pierderi mari în capturile utilizabile de pește alb de lac (Coregonus clupeaformis) în unele zone; suferă și de un trematod care provoacă chisturi inestetice pe piele. În ciuda numeroaselor încercări de a cultiva această specie, aceasta nu a fost niciodată în întregime domesticită și nu acceptă hrană artificială</string>
+    <string name="sursa_stiuca"><b>Sursa: </b>https://www.fishbase.de/summary/SpeciesSummary.php?ID=258&amp;AT=pike</string>
+    <string name="specie_biban"><b>Specie:</b> Biban</string>
+    <string name="denumire_biban"><b>Denumire stiintifica:</b> Perca fluviatilis</string>
+    <string name="temperatura_biban"><b>Temperatura:</b> 10-22 grade Celsius</string>
+    <string name="adancime_biban"><b>Adancime:</b> 1-30 metri</string>
+    <string name="dimensiune_biban"><b>Dimensiune maxima inregistrata:</b> 60cm</string>
+    <string name="greutate_biban"><b>Greutate Maxima Inregistrata:</b> 4.8kg</string>
+    <string name="descriere_biban"><b>Descriere: </b>Locuiește într-o gamă foarte largă de habitate, de la lagune estuare, lacuri de toate tipurile până la pâraie de dimensiuni medii. Larvele de hrănire apar în apă deschisă. Acesta este un hrănitor diurn oportunist care pradă în principal în timpul răsăritului și apusului soarelui, atacand toate pradele disponibile. Larvele și puieții mici se hrănesc de obicei cu nevertebrate planctonice. În prima vară, mulți tineri se deplasează în apropierea țărmurilor pentru a se hrăni cu prada bentonica. Se hrănește adesea cu pești la aproximativ 12 cm SL. Poate efectua migrații scurte de depunere a icrelor. Masculii ating prima maturitate sexuală la 1-2 ani, iar femelele la 2-4 ani. Fac icre în februarie-iulie. Ouăle grupate în panglici lungi albe (până la 1 m) se găsesc peste obiecte scufundate . Pulpa sa este excelentă și nu atât de osoasă. Folosit proaspăt și congelat; consumat la tigaie si copt. Poate fi capturat cu momeală naturală sau artificială</string>
+    <string name="sursa_biban"><b>Sursa: </b>https://www.fishbase.de/summary/Perca-fluviatilis.html</string>
 </resources>

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "690471538937",
+    "firebase_url": "https://fish-detector-project-default-rtdb.firebaseio.com",
     "project_id": "fish-detector-project",
     "storage_bucket": "fish-detector-project.appspot.com"
   },

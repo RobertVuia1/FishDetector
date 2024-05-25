@@ -47,7 +47,6 @@ public class UploadPhoto extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start a new activity or show a dialog for Card 1
                 startActivity(new Intent(UploadPhoto.this, MainActivity.class));
                 finish();
             }
