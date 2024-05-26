@@ -36,6 +36,11 @@
         android:icon="@drawable/fishinfo"
         android:title="@string/fish_information"/>
 
+    <item
+        android:id="@+id/menuCapture"
+        android:icon="@drawable/fishuploadlogo"
+        android:title="@string/catches"/>
+
     <item android:title="@string/others">
         <menu>
             <item

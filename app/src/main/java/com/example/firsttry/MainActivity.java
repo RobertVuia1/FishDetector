@@ -1,36 +1,22 @@
 package com.example.firsttry;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.NavController;
-import androidx.navigation.NavDestination;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.annotation.SuppressLint;
-import android.content.ClipData;
 import android.content.Intent;
-import android.media.RouteListingPreference;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -84,6 +70,15 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                 } else if (item.getItemId() == R.id.menuFavorite){
                     startActivity(new Intent(MainActivity.this, FavoritePlaces.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuTournaments){
+                    startActivity(new Intent(MainActivity.this, Tournaments.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuCapture){
+                    startActivity(new Intent(MainActivity.this, AddCatches.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuReports){
+                    startActivity(new Intent(MainActivity.this, Reports.class));
                     finish();
                 }
 

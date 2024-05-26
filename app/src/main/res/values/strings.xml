@@ -123,4 +123,20 @@
     <string name="greutate_biban"><b>Greutate Maxima Inregistrata:</b> 4.8kg</string>
     <string name="descriere_biban"><b>Descriere: </b>Locuiește într-o gamă foarte largă de habitate, de la lagune estuare, lacuri de toate tipurile până la pâraie de dimensiuni medii. Larvele de hrănire apar în apă deschisă. Acesta este un hrănitor diurn oportunist care pradă în principal în timpul răsăritului și apusului soarelui, atacand toate pradele disponibile. Larvele și puieții mici se hrănesc de obicei cu nevertebrate planctonice. În prima vară, mulți tineri se deplasează în apropierea țărmurilor pentru a se hrăni cu prada bentonica. Se hrănește adesea cu pești la aproximativ 12 cm SL. Poate efectua migrații scurte de depunere a icrelor. Masculii ating prima maturitate sexuală la 1-2 ani, iar femelele la 2-4 ani. Fac icre în februarie-iulie. Ouăle grupate în panglici lungi albe (până la 1 m) se găsesc peste obiecte scufundate . Pulpa sa este excelentă și nu atât de osoasă. Folosit proaspăt și congelat; consumat la tigaie si copt. Poate fi capturat cu momeală naturală sau artificială</string>
     <string name="sursa_biban"><b>Sursa: </b>https://www.fishbase.de/summary/Perca-fluviatilis.html</string>
+    <string name="tournament_name">Tournament Name</string>
+    <string name="tournament_location">Tournament Location</string>
+    <string name="tournament_starting_hour">Tournament Starting Hour</string>
+    <string name="tournament_description">Tournament description</string>
+    <string name="tournament_starting_date">Tournament Starting Date</string>
+    <string name="numele_turneului">Numele turneului</string>
+    <string name="data_turneului">Data Turneului</string>
+    <string name="ora">Ora</string>
+    <string name="data">Data</string>
+    <string name="catches">Catches</string>
+    <string name="adaugati_o_noua_captura">Adaugati o noua captura!</string>
+    <string name="lungimea_pestelui">Lungimea Pestelui</string>
+    <string name="greutatea_pestelui">Greutatea Pestelui</string>
+    <string name="specia_pestelui">Specia Pestelui</string>
+    <string name="lungimea_pestelui_in_cm_doar_cifre">Lungimea Pestelui(in cm, doar cifre)</string>
+    <string name="greutatea_pestelui_in_kg_doar_cifre">Greutatea pestelui(in kg, doar cifre)</string>
 </resources>
