@@ -139,4 +139,11 @@
     <string name="specia_pestelui">Specia Pestelui</string>
     <string name="lungimea_pestelui_in_cm_doar_cifre">Lungimea Pestelui(in cm, doar cifre)</string>
     <string name="greutatea_pestelui_in_kg_doar_cifre">Greutatea pestelui(in kg, doar cifre)</string>
+    <string name="incarca">Incarca</string>
+    <string name="incarcati_imaginea_pentru_recunoasterea_speciei_de_peste">Incarcati imaginea pentru recunoasterea speciei de peste</string>
+    <string name="max_temp">Max temp:</string>
+    <string name="date">Date</string>
+    <string name="vant">Vant</string>
+    <string name="precipitatii">Precipitatii</string>
+    <string name="umiditate">Umiditate</string>
 </resources>

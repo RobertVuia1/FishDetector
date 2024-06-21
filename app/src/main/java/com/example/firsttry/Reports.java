@@ -35,6 +35,8 @@ public class Reports extends AppCompatActivity {
     private TextView percentageYearTextView;
     private TextView percentageMonthTextView;
 
+    private TextView biggestCatch, longestcatch;
+
     FirebaseAuth auth;
 
     @Override
@@ -48,6 +50,8 @@ public class Reports extends AppCompatActivity {
         speciesCatchesMonthTextView = findViewById(R.id.speciesCatchesMonth);
         percentageYearTextView = findViewById(R.id.percentageYear);
         percentageMonthTextView = findViewById(R.id.percentageMonth);
+        biggestCatch = findViewById(R.id.biggestCatch);
+        longestcatch = findViewById(R.id.longestCatch);
 
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
@@ -76,7 +80,7 @@ public class Reports extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int currentYear = Calendar.getInstance().get(Calendar.YEAR);
-                int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1; // Calendar.MONTH is zero-based
+                int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
 
                 int totalCatchesYear = 0;
                 int totalCatchesMonth = 0;
@@ -88,13 +92,18 @@ public class Reports extends AppCompatActivity {
                 Map<String, Integer> speciesCountYear = new HashMap<>();
                 Map<String, Integer> speciesCountMonth = new HashMap<>();
 
+                double maxWeight = 0;
+                double maxLength = 0;
+
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String entryEmail = snapshot.child("email").getValue(String.class);
                     if (entryEmail != null) {
-                        String dateStr = snapshot.child("date").getValue(String.class);
-                        String species = snapshot.child("specie").getValue(String.class);
+                        String dateStr = getStringValue(snapshot.child("date"));
+                        String species = getStringValue(snapshot.child("specie"));
+                        String weight = getStringValue(snapshot.child("greutate"));
+                        String length = getStringValue(snapshot.child("lungime"));
 
-                        if (dateStr != null && species != null) {
+                        if (dateStr != null && species != null && weight != null && length != null) {
                             try {
                                 Calendar catchDate = Calendar.getInstance();
                                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
@@ -111,6 +120,14 @@ public class Reports extends AppCompatActivity {
                                         if (catchMonth == currentMonth) {
                                             totalCatchesMonth++;
                                             speciesCountMonth.put(species, speciesCountMonth.getOrDefault(species, 0) + 1);
+                                        }
+
+                                        if (Double.parseDouble(weight) > maxWeight) {
+                                            maxWeight = Double.parseDouble(weight);
+                                        }
+
+                                        if (Double.parseDouble(length) > maxLength) {
+                                            maxLength = Double.parseDouble(length);
                                         }
                                     }
                                 } else {
@@ -131,7 +148,7 @@ public class Reports extends AppCompatActivity {
                     }
                 }
 
-                displayResults(totalCatchesYear, totalCatchesMonth, speciesCountYear, speciesCountMonth, otherUsersCatchesYear, otherUsersCountYear, otherUsersCatchesMonth, otherUsersCountMonth);
+                displayResults(totalCatchesYear, totalCatchesMonth, speciesCountYear, speciesCountMonth, otherUsersCatchesYear, otherUsersCountYear, otherUsersCatchesMonth, otherUsersCountMonth, maxWeight, maxLength);
             }
 
             @Override
@@ -141,8 +158,13 @@ public class Reports extends AppCompatActivity {
         });
     }
 
+    private String getStringValue(DataSnapshot snapshot) {
+        Object value = snapshot.getValue();
+        return value != null ? value.toString() : null;
+    }
+
     private void displayResults(int totalCatchesYear, int totalCatchesMonth, Map<String, Integer> speciesCountYear, Map<String, Integer> speciesCountMonth,
-                                int otherUsersCatchesYear, int otherUsersCountYear, int otherUsersCatchesMonth, int otherUsersCountMonth) {
+                                int otherUsersCatchesYear, int otherUsersCountYear, int otherUsersCatchesMonth, int otherUsersCountMonth, double maxWeight, double maxLength) {
         totalCatchesYearTextView.setText("Capturile totale in anul curent: " + totalCatchesYear);
         totalCatchesMonthTextView.setText("Capturile totale in luna curenta: " + totalCatchesMonth);
 
@@ -165,6 +187,9 @@ public class Reports extends AppCompatActivity {
         double percentageMonth = avgOtherUsersCatchesMonth > 0 ? (totalCatchesMonth / avgOtherUsersCatchesMonth) * 100 : 0;
 
         percentageYearTextView.setText(String.format("In acest an, ai capturat cu %.2f%% mai multi pesti comparativ cu restul utilizatorilor", percentageYear));
-        percentageMonthTextView.setText(String.format("In acesta luna, ai capturat cu %.2f%% mai multi pesti comparativ cu restul utilizatorilor", percentageMonth));
+        percentageMonthTextView.setText(String.format("In aceasta luna, ai capturat cu %.2f%% mai multi pesti comparativ cu restul utilizatorilor", percentageMonth));
+
+        biggestCatch.setText(String.format("Cel mai mare peste: %.2f kg", maxWeight));
+        longestcatch.setText(String.format("Cel mai lung peste: %.2f cm", maxLength));
     }
 }

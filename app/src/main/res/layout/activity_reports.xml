@@ -1,153 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".Reports">
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/inapoi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardTotalCatchesYear"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/backButton"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/totalCatchesYear"
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inapoi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTotalCatchesYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Total Catches This Year: "
-            android:textSize="18sp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:fontFamily="sans-serif-medium" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backButton"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardTotalCatchesMonth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardTotalCatchesYear"
-        app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:id="@+id/totalCatchesYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Total Catches This Year: "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/totalCatchesMonth"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTotalCatchesMonth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Total Catches This Month: "
-            android:textSize="18sp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:fontFamily="sans-serif-medium" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTotalCatchesYear"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardSpeciesCatchesYear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardTotalCatchesMonth"
-        app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:id="@+id/totalCatchesMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Total Catches This Month: "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/speciesCatchesYear"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/biggestCatchCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Species Catches This Year: "
-            android:textSize="18sp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:fontFamily="sans-serif-medium" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTotalCatchesMonth"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardSpeciesCatchesMonth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardSpeciesCatchesYear"
-        app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:id="@+id/biggestCatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Biggest Catch:  "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/speciesCatchesMonth"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/longestCatchCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Species Catches This Month: "
-            android:textSize="18sp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:fontFamily="sans-serif-medium" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/biggestCatchCard"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardPercentageYear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardSpeciesCatchesMonth"
-        app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:id="@+id/longestCatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Longest Catch:  "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/percentageYear"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSpeciesCatchesYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Your Catches Compared to Others This Year: "
-            android:textSize="18sp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:fontFamily="sans-serif-medium" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/longestCatchCard"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardPercentageMonth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardPercentageYear"
-        app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:id="@+id/speciesCatchesYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Species Catches This Year: "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/percentageMonth"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSpeciesCatchesMonth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Your Catches Compared to Others This Month: "
-            android:textSize="18sp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:fontFamily="sans-serif-medium" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardSpeciesCatchesYear"
+            app:layout_constraintEnd_toEndOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/speciesCatchesMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Species Catches This Month: "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPercentageYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardSpeciesCatchesMonth"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/percentageYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Your Catches Compared to Others This Year: "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPercentageMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardPercentageYear"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/percentageMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Your Catches Compared to Others This Month: "
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif-medium" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

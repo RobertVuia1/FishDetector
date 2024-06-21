@@ -4,44 +4,44 @@
     <item
         android:id="@+id/menuProfile"
         android:icon="@drawable/home"
-        android:title="@string/home"/>
+        android:title="Acasa"/>
 
     <item
         android:id="@+id/menuReports"
         android:icon="@drawable/reports"
-        android:title="@string/reports"/>
+        android:title="Raporturi"/>
 
     <item
         android:id="@+id/menuTournaments"
         android:icon="@drawable/tournaments"
-        android:title="@string/tournaments"/>
+        android:title="Concursuri"/>
 
     <item
         android:id="@+id/menuFavorite"
         android:icon="@drawable/favorite"
-        android:title="@string/favorite_spots"/>
+        android:title="Locuri favorite"/>
 
     <item
         android:id="@+id/menuUpload"
         android:icon="@drawable/upload"
-        android:title="@string/upload_photo"/>
+        android:title="Recunoastere specie"/>
 
     <item
         android:id="@+id/menuWeather"
         android:icon="@drawable/weather"
-        android:title="@string/weather_info"/>
+        android:title="Informatii meteo"/>
 
     <item
         android:id="@+id/menuFish"
         android:icon="@drawable/fishinfo"
-        android:title="@string/fish_information"/>
+        android:title="Informatii specii"/>
 
     <item
         android:id="@+id/menuCapture"
         android:icon="@drawable/fishuploadlogo"
-        android:title="@string/catches"/>
+        android:title="Incarca captura"/>
 
-    <item android:title="@string/others">
+    <item android:title="Altele">
         <menu>
             <item
                 android:id="@+id/menuLogout"

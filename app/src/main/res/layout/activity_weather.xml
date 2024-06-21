@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/idPBLoading"
-        android:visibility="visible"
+        android:visibility="invisible"
         android:layout_centerInParent="true"/>
 
     <RelativeLayout
@@ -112,12 +112,53 @@
             android:textColor="@color/white"
             android:textSize="70dp"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTemperature"
+            android:orientation="horizontal"
+            android:id="@+id/LiniarTemp"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/idTVWind"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vant"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/idTVPrecipitation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/precipitatii"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/idTVHumidity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/umiditate"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/idIVIcon"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/idTVTemperature"
+            android:layout_below="@+id/LiniarTemp"
             android:layout_margin="10dp"
             android:src="@mipmap/ic_launcher"/>
 
@@ -139,7 +180,7 @@
             android:id="@+id/moreDaysButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/vezi_prognoza_pe_7_zile"
+            android:text="Vizualizeaza prognoza pentru 3 zile"
             android:textColor="@color/white"
             android:layout_below="@+id/idIVIcon"/>
 

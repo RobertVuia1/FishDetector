@@ -1,32 +1,28 @@
 package com.example.firsttry;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.annotation.SuppressLint;
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -34,18 +30,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.FirebaseAuth;
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.NetworkPolicy;
-import com.squareup.picasso.Picasso;
-
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.widget.Toast;
-
-import androidx.core.app.ActivityCompat;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -60,7 +45,7 @@ public class Weather extends AppCompatActivity {
 
     private RelativeLayout homeRL;
     private ProgressBar loadingPB;
-    private TextView cityNameTV, temperatureTV, conditionTV;
+    private TextView cityNameTV, temperatureTV, conditionTV, wind, precip, humidity;
     private RecyclerView weatherRV;
     private TextInputEditText cityEdt;
     private ImageView backIV, iconIV, searchIV;
@@ -83,6 +68,9 @@ public class Weather extends AppCompatActivity {
         temperatureTV = findViewById(R.id.idTVTemperature);
         conditionTV = findViewById(R.id.idTVCondition);
         weatherRV = findViewById(R.id.idRvWeather);
+        wind = findViewById(R.id.idTVWind);
+        precip = findViewById(R.id.idTVPrecipitation);
+        humidity = findViewById(R.id.idTVHumidity);
         cityEdt = findViewById(R.id.idEdtCity);
         backIV = findViewById(R.id.idIVBack);
         iconIV = findViewById(R.id.idIVIcon);
@@ -160,7 +148,6 @@ public class Weather extends AppCompatActivity {
         String longi = String.valueOf(longitude);
         String lat = String.valueOf(latitude);
 
-        Toast.makeText(Weather.this, longi + " " + lat, Toast.LENGTH_SHORT).show();
 
         Log.i("date", longi);
         Log.i("date", lat);
@@ -175,7 +162,7 @@ public class Weather extends AppCompatActivity {
                     if (city != null && !city.equals("")){
                         cityName = city;
                     }else {
-                        cityName = "Bocsa";
+                        cityName = "Timisoara";
                     }
                 }
             }
@@ -219,6 +206,12 @@ public class Weather extends AppCompatActivity {
                 homeRL.setVisibility(View.VISIBLE);
                 weatherRVModelArrayList.clear();
                 try {
+                    String windS = response.getJSONObject("current").getString("wind_kph");
+                    wind.setText("Vant: " + windS + "km/h");
+                    String precipitations = response.getJSONObject("current").getString("precip_mm");
+                    precip.setText("Precipitatii: " + precipitations);
+                    String hum = response.getJSONObject("current").getString("humidity");
+                    humidity.setText("Umiditatea: " + hum + "%");
                     String temperature = response.getJSONObject("current").getString("temp_c");
                     temperatureTV.setText(temperature + "°C");
                     int isDay = response.getJSONObject("current").getInt("is_day");

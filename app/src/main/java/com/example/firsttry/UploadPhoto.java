@@ -1,8 +1,5 @@
 package com.example.firsttry;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,6 +10,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.tensorflow.lite.Interpreter;
 
@@ -156,6 +156,6 @@ public class UploadPhoto extends AppCompatActivity {
 
 
     private void displayResult(String predictedClass) {
-        predictionTextView.setText("Specia recunoscuta: " + predictedClass);
+        predictionTextView.setText("Specia recunoscuta de algoritm este: " + predictedClass);
     }
 }

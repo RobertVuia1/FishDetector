@@ -3,50 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".UploadPhoto">
 
+    <!-- Back Button -->
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inapoi"
-        android:textColor="@color/white"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="16dp"
+        android:text="@string/inapoi"
+        android:textColor="@android:color/white"
+        android:elevation="2dp" />
 
-    <!-- ImageView to display the uploaded image -->
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:adjustViewBounds="true"
-        android:maxWidth="60dp"
-        android:layout_below="@+id/backButton"
-        android:maxHeight="60dp"
         android:scaleType="fitCenter"
-        android:layout_marginLeft="3dp"
-        android:src="@drawable/logo" /> <!-- Placeholder image until the actual image is loaded -->
+        android:src="@drawable/logo"
+        android:elevation="4dp" />
 
-    <!-- Button for image upload -->
     <Button
         android:id="@+id/upload_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/image_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Upload Image" />
+        android:layout_marginTop="24dp"
+        android:text="@string/incarca"
+        android:textColor="@android:color/white"
+        android:elevation="2dp" />
 
-    <!-- TextView to display the predicted fish species -->
     <TextView
         android:id="@+id/prediction_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/upload_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Predicted Species: "
-        android:textSize="18sp" />
+        android:layout_marginTop="24dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/incarcati_imaginea_pentru_recunoasterea_speciei_de_peste"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>

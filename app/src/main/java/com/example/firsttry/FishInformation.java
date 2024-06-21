@@ -1,22 +1,22 @@
 package com.example.firsttry;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridLayout;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class FishInformation extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class FishInformation extends AppCompatActivity {
 
                 if (item.getItemId() == R.id.menuFish){
                     startActivity(new Intent(FishInformation.this, FishInformation.class));
+                    finish();
                 } else if (item.getItemId() == R.id.menuLogout){
                     FirebaseAuth.getInstance().signOut();
                     startActivity(new Intent(FishInformation.this, Login.class));
@@ -50,7 +51,22 @@ public class FishInformation extends AppCompatActivity {
                     startActivity(new Intent(FishInformation.this, MainActivity.class));
                     finish();
                 } else if (item.getItemId() == R.id.menuWeather){
-                    startActivity(new Intent(FishInformation.this, WeatherInput.class));
+                    startActivity(new Intent(FishInformation.this, Weather.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuUpload){
+                    startActivity(new Intent(FishInformation.this, UploadPhoto.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuFavorite){
+                    startActivity(new Intent(FishInformation.this, FavoritePlaces.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuTournaments){
+                    startActivity(new Intent(FishInformation.this, Tournaments.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuCapture){
+                    startActivity(new Intent(FishInformation.this, AddCatches.class));
+                    finish();
+                } else if (item.getItemId() == R.id.menuReports){
+                    startActivity(new Intent(FishInformation.this, Reports.class));
                     finish();
                 }
 
